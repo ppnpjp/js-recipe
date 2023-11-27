@@ -12,11 +12,12 @@
 
     <script>
       // カウンターアプリに発展させてみましょう
-
+      var NumberOfClicked = 0;
       const display = document.getElementById("display")
       const button = document.getElementById("button")
       button.onclick = function () {
-        display.textContent = "クリックされた！！"
+        NumberOfClicked += 1;
+        display.textContent = String(NumberOfClicked)+"回クリックされた！！";
       }
     </script>
   </body>
